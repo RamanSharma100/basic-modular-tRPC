@@ -1,4 +1,4 @@
-# Learn tRPC with TypeScript, Express, and Modular Structure (basic-tRPC)
+# Learn tRPC basics with TypeScript, Express, bunjs and Modular Structure (basic-modular-tRPC)
 
 > ℹ️ **Info**: This project is intended for learning purposes and aims to provide a foundational understanding of how to set up and use tRPC in a TypeScript environment with Express and having Modular Structure.
 
