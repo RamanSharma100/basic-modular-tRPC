@@ -1,0 +1,32 @@
+{
+  "name": "basic-trpc",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "dev:server": "bun run --watch src/server.ts",
+    "dev:client": "bun run --watch src/client.ts",
+    "dev": "bun run run-p dev:* --print-label",
+    "type-check": "bun run tsc",
+    "build": "bun build src/server.ts src/client.ts --outdir=dist --sourcemap",
+    "lint": "bun run eslint --cache src",
+    "start": "bun run dev",
+    "test-dev": "bun run start-server-and-test 'bun run src/server.ts' 2021 'bun run src/client.ts'",
+    "test-start": "bun run start-server-and-test 'bun run dist/server.js' 2021 'bun run dist/client.js'"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@trpc/client": "^11.0.0-rc.768",
+    "@trpc/react-query": "^11.0.0-rc.768",
+    "@trpc/server": "^11.0.0-rc.768",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  }
+}
