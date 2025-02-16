@@ -15,7 +15,6 @@ basic/
 ├── .env
 ├── .gitignore
 ├── README.md
-├── index.ts
 ├── package.json
 ├── tsconfig.json
 ├── src/
